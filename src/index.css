@@ -1,0 +1,282 @@
+/* src/custom.css */
+
+/* Custom CSS Variables for colors and fonts */
+:root {
+  --custom-dark-blue: #050A30;
+  --custom-card-bg: #0c123a;
+  --custom-orange-accent: #FFA500;
+  --custom-light-purple-text: #a9a9d8;
+  --custom-grey-400: #9ca3af; /* Approximation of your original gray-400 */
+
+  /* Tech Tag Colors */
+  --tech-blue-primary: #1572B6;
+  --tech-blue-secondary: #4479A1;
+
+  --font-family-space-grotesk: 'Space Grotesk', sans-serif;
+  --font-family-noto-sans: 'Noto Sans', sans-serif;
+}
+
+/* Override Bootstrap defaults directly */
+body {
+  background-color: var(--custom-dark-blue) !important;
+  color: var(--custom-light-purple-text) !important;
+  font-family: var(--font-family-space-grotesk) !important;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: var(--font-family-space-grotesk) !important;
+  color: var(--custom-orange-accent) !important; /* Default heading color */
+}
+
+/* --- Custom Elements and Overrides --- */
+
+/* Custom button gradient */
+.btn.custom-btn-gradient {
+  background: linear-gradient(to right, #f97316, #fbbf24);
+  border-color: transparent; /* No default Bootstrap border */
+  color: var(--bs-white) !important; /* Ensure text is white */
+  font-weight: 600 !important; /* fw-semibold */
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); /* shadow */
+}
+.btn.custom-btn-gradient:hover {
+  opacity: 0.6;
+  /* Keep background for hover as well or define new gradient */
+  background: linear-gradient(to right, #f97316, #fbbf24);
+}
+.btn.custom-btn-gradient:focus {
+    box-shadow: 0 0 0 0.25rem rgba(251, 191, 36, 0.5); /* Focus ring from amber-500 */
+}
+
+
+/* Backgrounds for specific components */
+.bg-custom-card-bg {
+    background-color: var(--custom-card-bg) !important;
+}
+.text-custom-orange-accent {
+    color: var(--custom-orange-accent) !important;
+}
+.text-custom-light-purple-text {
+    color: var(--custom-light-purple-text) !important;
+}
+.text-custom-grey-400 {
+    color: var(--custom-grey-400) !important;
+}
+
+/* Tech Tag Backgrounds */
+.bg-tech-blue-primary {
+    background-color: var(--tech-blue-primary) !important;
+}
+.bg-tech-blue-secondary {
+    background-color: var(--tech-blue-secondary) !important;
+}
+
+/* Profile Image Wrapper sizes */
+.profile-image-wrapper {
+  width: 9rem; /* w-36 */
+  height: 9rem; /* h-36 */
+  flex-shrink: 0;
+  position: relative;
+}
+
+@media (min-width: 768px) { /* md */
+  .profile-image-wrapper {
+    width: 11rem; /* md:w-44 */
+    height: 11rem; /* md:h-44 */
+  }
+}
+@media (min-width: 1024px) { /* lg */
+  .profile-image-wrapper {
+    width: 13rem; /* lg:w-52 */
+    height: 13rem; /* lg:h-52 */
+  }
+}
+
+/* Custom highlight for title span */
+.custom-highlight-span {
+    position: relative;
+    display: inline-block;
+    z-index: 0; /* Ensure this is above before, but text is above this */
+}
+.custom-highlight-span::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 0.75rem; /* h-3 */
+  width: 110%;
+  border-radius: 0.375rem; /* rounded-md */
+  background-color: rgba(255, 255, 255, 0.1);
+  z-index: -1; /* Placed behind text */
+}
+@media (min-width: 640px) { /* sm */
+  .custom-highlight-span::before {
+    height: 1rem; /* sm:before:h-4 */
+  }
+}
+@media (min-width: 768px) { /* md */
+  .custom-highlight-span::before {
+    height: 1.5rem; /* md:before:h-6 */
+  }
+}
+
+/* Social Icons Wrapper */
+.social-icon-wrapper {
+  height: 3rem; /* h-12 */
+  width: 3rem; /* w-12 */
+  border-radius: 50% !important; /* rounded-full */
+  background-color: rgba(255, 255, 255, 0.05) !important; /* bg-white/5 */
+  border: 1px solid rgba(255, 255, 255, 0.1) !important; /* border border-white/10 */
+  transition: background-color 0.3s ease;
+}
+.social-icon-wrapper:hover {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+.social-icon {
+  width: 2.5rem; /* h-10 w-10 (default) */
+  height: 2.5rem;
+  object-fit: contain;
+}
+/* Specific overrides for smaller social icons */
+.social-icon.h-6 { /* Using a utility class name like h-6 to apply specific size */
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+/* Skills Section */
+.skill-image {
+  width: 4rem; /* w-16 */
+  height: 4rem; /* h-16 */
+  object-fit: contain;
+  border-radius: 0.5rem; /* rounded-lg */
+}
+@media (min-width: 768px) { /* md */
+  .skill-image {
+    width: 5rem; /* md:w-20 */
+    height: 5rem; /* md:h-20 */
+  }
+}
+
+.transition-transform-hover {
+  transition: transform 0.3s ease;
+}
+.transition-transform-hover:hover {
+  transform: scale(1.1);
+}
+
+/* Project Card Image for backgrounds defined in CSS */
+.project-card-image {
+    width: 100%;
+    padding-top: 56.25%; /* To maintain 16:9 aspect ratio */
+    border-radius: .375rem;
+}
+
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 20px #ffc107;
+}
+
+
+/* Experience list custom bullet */
+.experience-responsibilities li {
+    position: relative;
+    padding-left: 1.5rem; /* Space for custom bullet */
+    margin-bottom: 0.25rem; /* space-y-1 */
+}
+.experience-responsibilities li::before {
+    content: '\2022'; /* Unicode for bullet point */
+    color: #ffc107; /* Bootstrap's warning color for yellow */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+}
+
+/* Full height minus header (approx 8rem) */
+.min-vh-100-minus-8rem {
+  min-height: calc(100vh - 8rem);
+}
+
+/* --- Custom Background Images (defined here as no SCSS to merge) --- */
+.profile-image-primary {
+  background-image: url('./public/images/Profile2Formal_1x1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50% !important; /* Ensure it's perfectly round */
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border: 4px solid #facc15; /* yellow-500 */
+}
+
+.profile-image-secondary {
+  background-image: url('./public/images/Profile1x1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50% !important;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border: 4px solid #facc15; /* yellow-500 */
+}
+
+/* This hover effect needs to be applied to the parent wrapper */
+.profile-image-wrapper:hover .profile-image-secondary {
+  opacity: 1;
+}
+
+.coplan-background {
+  background-image: url('./public/images/COPLAN_bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.clinic-background {
+  background-image: url('./public/images/Clinic_Background_bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.library-background {
+  background-image: url('./public/images/Library_bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.guidance-background {
+  background-image: url('./public/images/Guidance_bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.drugstore-background {
+  background-image: url('./public/images/Drugstore_bg1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.transaction-background {
+  background-image: url('./public/images/Transaction_bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.demo-icon {
+    height: 50px;
+    width: 50px;
+    transition: transform 0.3s ease;
+}
+
+.demo-icon:hover {
+    transform: scale(1.1);
+}
