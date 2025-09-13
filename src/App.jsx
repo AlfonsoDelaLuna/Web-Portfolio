@@ -7,7 +7,7 @@ import HeaderSection from './components/HeaderSection';
 import ProjectsSection from './components/ProjectSection';
 import ExperienceSection from './components/ExperienceSection';
 import EducationSection from './components/EducationSection';
-import ProjectInfoPage from './projects/STIER_COPAN/ProjectInfoPage'; // Import the new page
+import ProjectInfoPage from './projects/STIER_COPLAN/ProjectInfoPage'; // Import the new page
 import projectsData from './data/project'; // Import your project data
 
 // This component will render your main portfolio sections
