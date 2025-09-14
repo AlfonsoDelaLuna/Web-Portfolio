@@ -16,10 +16,10 @@ const ProjectInfoPage = ({ project }) => {
       <h1 className="project-title">{project.title}</h1>
       <p className="project-tagline">{project.tagline}</p>
 
-      {project.image && (
+      {project.heroImage && (
         <div className="project-image-wrapper">
           <img
-            src={project.image}
+            src={project.heroImage}
             alt={`Screenshot of ${project.title}`}
             className="project-main-image"
           />

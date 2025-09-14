@@ -7,7 +7,7 @@ import HeaderSection from './components/HeaderSection';
 import ProjectsSection from './components/ProjectSection';
 import ExperienceSection from './components/ExperienceSection';
 import EducationSection from './components/EducationSection';
-import ProjectInfoPage from './projects/STIER_COPAN/ProjectInfoPage'; // Import the new page
+import ProjectInfoPage from './projects/STIER_COPLAN/ProjectInfoPage'; // Import the new page
 import projectsData from './data/project'; // Import your project data
 
 // This component will render your main portfolio sections
@@ -30,7 +30,7 @@ function App() {
               <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route
-                  path="/project/:projectId"
+                  path="/projects/:projectId"
                   element={<ProjectDetailWrapper />}
                 />
               </Routes>
@@ -45,7 +45,7 @@ function App() {
 // Helper component to find the project based on URL parameter
 const ProjectDetailWrapper = () => {
   const { projectId } = useParams(); // Hook to get URL parameters
-  const project = projectsData.find((p) => p.id === projectId);
+  const project = projectsData.find((p) => p.id.toString() === projectId);
 
   return <ProjectInfoPage project={project} />;
 };
