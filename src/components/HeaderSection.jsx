@@ -30,7 +30,7 @@ function HeaderSection() {
                 View My Work <span className="ms-2">→</span>
               </a>
               <a
-                href="/Dela_Luna,_Alfonso_Martin_I.pdf"
+                href="images/Dela Luna, Alfonso Martin I. Resume.pdf"
                 download="DelaLuna_Resume.pdf"
                 className="btn custom-btn-gradient py-2 px-4 rounded-3 text-white fw-semibold hover-opacity-60"
               >

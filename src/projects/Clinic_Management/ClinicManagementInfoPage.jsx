@@ -1,0 +1,102 @@
+// src/projects/Clinic_Management_v2/ClinicManagementInfoPage.jsx
+import React, { useEffect, useRef, useState } from 'react';
+import './ClinicManagementInfoPage.css';
+
+// Custom hook for observing element intersection
+const useIntersectionObserver = (options) => {
+  const [ref, setRef] = useState(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setIsVisible(true);
+        observer.unobserve(entry.target);
+      }
+    }, options);
+
+    if (ref) {
+      observer.observe(ref);
+    }
+
+    return () => {
+      if (ref) {
+        observer.unobserve(ref);
+      }
+    };
+  }, [ref, options]);
+
+  return [setRef, isVisible];
+};
+
+// AnimatedSection component to wrap content
+const AnimatedSection = ({ children }) => {
+  const [ref, isVisible] = useIntersectionObserver({ threshold: 0.1 });
+  return (
+    <div ref={ref} className={`reveal-on-scroll ${isVisible ? 'is-visible' : ''}`}>
+      {children}
+    </div>
+  );
+};
+
+const ClinicManagementInfoPage = ({ project }) => {
+  if (!project) {
+    return <div>Project not found</div>;
+  }
+
+  return (
+    <div className="clinic-info-container">
+      <header className="clinic-header">
+        <AnimatedSection>
+          <h1>{project.title}</h1>
+          <p>{project.overview}</p>
+          <div className="tech-tags">
+            {project.technologies.map((tech, index) => (
+              <span key={index} className="tech-tag">{tech}</span>
+            ))}
+          </div>
+          <div className="project-links">
+            <a href={project.githubRepoLink} target="_blank" rel="noopener noreferrer">
+              <img src="/images/Github.png" alt="GitHub" className="link-icon" />
+              <span>GitHub</span>
+            </a>
+            <a href={project.liveDemoLink} target="_blank" rel="noopener noreferrer">
+              <img src="/images/info.png" alt="Live Demo" className="link-icon" />
+              <span>Live Demo</span>
+            </a>
+          </div>
+        </AnimatedSection>
+      </header>
+
+      <main className="clinic-main">
+        <AnimatedSection>
+          <section className="clinic-section problem-section">
+            <h2>Problem</h2>
+            <p>{project.problem}</p>
+            <ol>
+              <li>{project.problem1}</li>
+              <li>{project.problem2}</li>
+              <li>{project.problem3}</li>
+              <li>{project.problem4}</li>
+              <li>{project.problem5}</li>
+              <li>{project.problem6}</li>
+              <li>{project.problem7}</li>
+            </ol>
+          </section>
+        </AnimatedSection>
+        <div className="clinic-image-grid">
+          <AnimatedSection><div className="grid-item" style={{ backgroundImage: `url(/images/COPLAN_bg.png)` }}></div></AnimatedSection>
+          <AnimatedSection><div className="grid-item" style={{ backgroundImage: `url(/images/Adminbg.png)` }}></div></AnimatedSection>
+          <AnimatedSection><div className="grid-item" style={{ backgroundImage: `url(/images/Clinic_Background_bg.png)` }}></div></AnimatedSection>
+          <AnimatedSection><div className="grid-item" style={{ backgroundImage: `url(/images/Pharmacy_Background.png)` }}></div></AnimatedSection>
+        </div>
+      </main>
+
+      <footer className="clinic-footer">
+        <a href="/">Back to Projects</a>
+      </footer>
+    </div>
+  );
+};
+
+export default ClinicManagementInfoPage;

@@ -7,9 +7,9 @@ function ProjectsSection({ projects }) {
       <h2 className="fs-2 fw-bold text-center text-orange-accent mb-4">
         Projects
       </h2>
-      <div className="row g-4 pt-3"> {/* Bootstrap grid row with gap */}
+      <div className="projects-grid pt-3"> {/* Use custom grid */}
         {projects.map((project) => (
-          <div key={project.id} className="col-12 col-sm-6 col-lg-4"> {/* Responsive columns */}
+          <div key={project.id}>
             <ProjectCard {...project} />
           </div>
         ))}
@@ -22,15 +22,15 @@ function ProjectCard({
   id,
   title,
   technologies,
-  description,
+  minioverview,
   heroImage,
   githubLink,
 }) {
   // Map technology to a custom Bootstrap-themed color or use custom class
   const getTechTagClass = (tech) => {
     switch (tech) {
-      case 'HTML':
-      case 'CSS':
+      case 'HTML5':
+      case 'CSS3':
       case 'JavaScript':
         return 'bg-tech-blue-primary';
       case 'PHP':
@@ -47,9 +47,9 @@ function ProjectCard({
   return (
     // Added 'project-card' for the main hover effect
     <div className="d-flex flex-column gap-3 rounded-lg bg-card-bg p-4 h-100 project-card">
-      <div className="w-100 project-card-image ratio ratio-16x9 rounded-3 bg-dark d-flex align-items-center justify-content-center">
+      <div className="w-100 project-card-image rounded-3 bg-dark">
         {heroImage ? (
-          <img src={heroImage} alt={`${title} hero image`} className="img-fluid rounded-3" />
+          <img src={heroImage} alt={`${title} hero image`} />
         ) : (
           <p className="text-white-50">No Image Available</p>
         )}
@@ -68,15 +68,9 @@ function ProjectCard({
             </span>
           ))}
         </div>
-        {Array.isArray(description) ? (
-          <ul className="text-light-purple-text fs-7 fw-normal pt-2 list-unstyled">
-            {description.map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
-        ) : (
+        {minioverview && (
           <p className="text-light-purple-text fs-7 fw-normal pt-2 text-justify">
-            {description}
+            {minioverview}
           </p>
         )}
         <div className="d-flex gap-3 pt-2"> {/* Increased gap a bit */}

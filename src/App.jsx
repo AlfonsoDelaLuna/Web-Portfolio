@@ -7,7 +7,8 @@ import HeaderSection from './components/HeaderSection';
 import ProjectsSection from './components/ProjectSection';
 import ExperienceSection from './components/ExperienceSection';
 import EducationSection from './components/EducationSection';
-import ProjectInfoPage from './projects/STIER_COPLAN/ProjectInfoPage'; // Import the new page
+import ProjectInfoPage from './projects/STIER_COPLAN/ProjectInfoPage'; // Default project page
+import ClinicManagementInfoPage from './projects/Clinic_Management/ClinicManagementInfoPage'; // New clinic project page
 import projectsData from './data/project'; // Import your project data
 
 // This component will render your main portfolio sections
@@ -43,10 +44,17 @@ function App() {
 }
 
 // Helper component to find the project based on URL parameter
+// Helper component to find the project and render the correct page
 const ProjectDetailWrapper = () => {
   const { projectId } = useParams(); // Hook to get URL parameters
   const project = projectsData.find((p) => p.id.toString() === projectId);
 
+  // Conditionally render the new page for the specific project
+  if (projectId === 'clinic-management-system') {
+    return <ClinicManagementInfoPage project={project} />;
+  }
+
+  // Render the default project page for all other projects
   return <ProjectInfoPage project={project} />;
 };
 
