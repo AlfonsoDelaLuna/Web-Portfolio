@@ -218,7 +218,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 /* --- Custom Background Images (defined here as no SCSS to merge) --- */
 .profile-image-primary {
-  background-image: url('./public/images/Profile2Formal_1x1.png');
+  background-image: url('./public/images/Profile1x1_Formal.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -232,7 +232,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .profile-image-secondary {
-  background-image: url('./public/images/Profile1x1.png');
+  background-image: url('./public/images/Profile2_1x1.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
