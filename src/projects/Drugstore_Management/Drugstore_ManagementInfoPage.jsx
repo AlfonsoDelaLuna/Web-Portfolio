@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './ClinicManagementInfoPage.css';
+import './Drugstore_ManagementInfoPage.css';
 
 // Custom hook for observing element intersection
 const useIntersectionObserver = (options) => {
@@ -94,18 +94,16 @@ const ClinicManagementInfoPage = ({ project }) => {
               <li>{project.problem3}</li>
               <li>{project.problem4}</li>
               <li>{project.problem5}</li>
-              <li>{project.problem6}</li>
-              <li>{project.problem7}</li>
             </ol>
           </section>
         </AnimatedSection>
         <div className="clinic-slider-wrapper">
           <Slider {...sliderSettings}>
             <div className="slide-item">
-              <img src="/images/Clinic_Background_bg.png" alt="COPLAN" />
+              <img src="/images/Drugstore_bg.png" alt="COPLAN" />
             </div>
             <div className="slide-item">
-              <img src="/images/Clinic_Background_New.png" alt="Admin" />
+              <img src="/images/Drugstore_bg1.png" alt="Admin" />
             </div>
           </Slider>
         </div>
