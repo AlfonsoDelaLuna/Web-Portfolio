@@ -1,6 +1,6 @@
 // src/data/project.js
 const projectsData = [
-  {
+  { //STIER COPLAN
     id: 'stier-coplan',
     title: 'STIER COPLAN: Event Reservation System',
     heroImage: '/images/COPLAN_bg.png', // Make sure you have this image
@@ -10,7 +10,7 @@ const projectsData = [
     githubRepoLink: 'https://github.com/AlfonsoDelaLuna/Guidance_System',
     // ... other details like features, challenges, etc.
   },
-  {
+  { //Clinic Management System
     id: 'clinic-management-system', // new slug-like id
     title: 'Clinic Management System',
     heroImage: '/images/Clinic_Background_New.png', // you'll need an image for this
@@ -31,33 +31,39 @@ const projectsData = [
     challenges: [],
     outcomes: [],
   },
-  {
+  { // Drugstore Management System
     id: 'drugstore-management-system',
     title: 'Drugstore Management System',
     heroImage: '/images/Drugstore_bg.png',
     minioverview: 'A web-based management system is designed to manage and track inventory for a drugstore.',
     overview: 'This Drugstore Inventory System is designed to streamline the management of pharmaceutical products and related items within a drugstore setting. It provides a centralized platform for monitoring stock levels, tracking product information (such as name, description, supplier, and expiration date), and generating comprehensive reports for informed decision-making in inventory management. The system aims to improve efficiency, reduce errors, and optimize stock levels to meet customer demand while minimizing waste.',
     problem: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis ornare blandit.',
-    problem1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis ornare blandit. Suspendisse enim leo, interdum sed mattis sed, consequat viverra nibh. Donec sollicitudin ullamcorper consequat. Vivamus interdum consequat finibus. Aliquam leo nisl, varius ut lectus at, elementum vulputate purus. Vestibulum malesuada diam vel ex scelerisque rutrum. Nunc facilisis nunc vel auctor porta. Pellentesque sit amet nibh gravida, tristique metus et, dapibus est. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus pellentesque arcu quis elementum viverra. Phasellus ac tortor sit amet magna ultrices malesuada. Morbi in tortor nisl. Morbi id imperdiet augue, venenatis vehicula tellus. Integer cursus ultricies eros, ac tempus nunc semper at. Phasellus tincidunt nunc eget lacus scelerisque auctor.',
-    problem2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis ornare blandit. Suspendisse enim leo, interdum sed mattis sed, consequat viverra nibh. Donec sollicitudin ullamcorper consequat. Vivamus interdum consequat finibus. Aliquam leo nisl, varius ut lectus at, elementum vulputate purus. Vestibulum malesuada diam vel ex scelerisque rutrum. Nunc facilisis nunc vel auctor porta. Pellentesque sit amet nibh gravida, tristique metus et, dapibus est. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus pellentesque arcu quis elementum viverra. Phasellus ac tortor sit amet magna ultrices malesuada. Morbi in tortor nisl. Morbi id imperdiet augue, venenatis vehicula tellus. Integer cursus ultricies eros, ac tempus nunc semper at. Phasellus tincidunt nunc eget lacus scelerisque auctor.',
-    problem3: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis ornare blandit. Suspendisse enim leo, interdum sed mattis sed, consequat viverra nibh. Donec sollicitudin ullamcorper consequat. Vivamus interdum consequat finibus. Aliquam leo nisl, varius ut lectus at, elementum vulputate purus. Vestibulum malesuada diam vel ex scelerisque rutrum. Nunc facilisis nunc vel auctor porta. Pellentesque sit amet nibh gravida, tristique metus et, dapibus est. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus pellentesque arcu quis elementum viverra. Phasellus ac tortor sit amet magna ultrices malesuada. Morbi in tortor nisl. Morbi id imperdiet augue, venenatis vehicula tellus. Integer cursus ultricies eros, ac tempus nunc semper at. Phasellus tincidunt nunc eget lacus scelerisque auctor.',
-    problem4: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis ornare blandit. Suspendisse enim leo, interdum sed mattis sed, consequat viverra nibh. Donec sollicitudin ullamcorper consequat. Vivamus interdum consequat finibus. Aliquam leo nisl, varius ut lectus at, elementum vulputate purus. Vestibulum malesuada diam vel ex scelerisque rutrum. Nunc facilisis nunc vel auctor porta. Pellentesque sit amet nibh gravida, tristique metus et, dapibus est. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus pellentesque arcu quis elementum viverra. Phasellus ac tortor sit amet magna ultrices malesuada. Morbi in tortor nisl. Morbi id imperdiet augue, venenatis vehicula tellus. Integer cursus ultricies eros, ac tempus nunc semper at. Phasellus tincidunt nunc eget lacus scelerisque auctor.',
-    problem5: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis ornare blandit. Suspendisse enim leo, interdum sed mattis sed, consequat viverra nibh. Donec sollicitudin ullamcorper consequat. Vivamus interdum consequat finibus. Aliquam leo nisl, varius ut lectus at, elementum vulputate purus. Vestibulum malesuada diam vel ex scelerisque rutrum. Nunc facilisis nunc vel auctor porta. Pellentesque sit amet nibh gravida, tristique metus et, dapibus est. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus pellentesque arcu quis elementum viverra. Phasellus ac tortor sit amet magna ultrices malesuada. Morbi in tortor nisl. Morbi id imperdiet augue, venenatis vehicula tellus. Integer cursus ultricies eros, ac tempus nunc semper at. Phasellus tincidunt nunc eget lacus scelerisque auctor.',
+    problem1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis ornare blandit. Suspendisse enim leo, interdum sed mattis sed, consequat viverra nibh. Donec sollicitudin ullamcorper consequat. Vivamus interdum consequat finibus.',
+    problem2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis ornare blandit. Suspendisse enim leo, interdum sed mattis sed, consequat viverra nibh. Donec sollicitudin ullamcorper consequat. Vivamus interdum consequat finibus.',
+    problem3: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis ornare blandit. Suspendisse enim leo, interdum sed mattis sed, consequat viverra nibh. Donec sollicitudin ullamcorper consequat. Vivamus interdum consequat finibus.',
+    problem4: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis ornare blandit. Suspendisse enim leo, interdum sed mattis sed, consequat viverra nibh. Donec sollicitudin ullamcorper consequat. Vivamus interdum consequat finibus.',
+    problem5: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis ornare blandit. Suspendisse enim leo, interdum sed mattis sed, consequat viverra nibh. Donec sollicitudin ullamcorper consequat. Vivamus interdum consequat finibus.',
     technologies: ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'MySQL'],
     githubRepoLink: 'https://github.com/AlfonsoDelaLuna/Drugstore_Inventory',
     features: ['Inventory Tracking', 'Expiration Date Alerts', 'Data Export'],
     challenges: [],
     outcomes: [],
   },
-  {
+  { // Guidance Management System
     id: 'guidance-management-system',
     title: 'Guidance Management System',
     heroImage: '/images/Guidance_bg.png',
-    minioverview: 'A web-based inventory management system that tracks the use of consultation forms during the academic year, adds students, and maintains student information.',
-    overview: 'A web-based inventory management system that tracks the use of consultation forms during the academic year, adds students, and maintains student information.',
+    minioverview: 'This project is a guidance system for educational institutions, such as schools and colleges. It provides a range of features to manage student records, track consultations, and facilitate various guidance-related activities.',
+    overview: 'This Guidance Management System is designed to streamline the management of guidance activities and student records within educational institutions. It provides a centralized platform for tracking student information, managing consultations, and generating comprehensive reports for informed decision-making in guidance management. The system aims to improve efficiency, reduce errors, and optimize guidance activities to meet the needs of students and educational staff.',
+    problem: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis ornare blandit.',
+    problem1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis ornare blandit. Suspendisse enim leo, interdum sed mattis sed, consequat viverra nibh. Donec sollicitudin ullamcorper consequat. Vivamus interdum consequat finibus.',
+    problem2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis ornare blandit. Suspendisse enim leo, interdum sed mattis sed, consequat viverra nibh. Donec sollicitudin ullamcorper consequat. Vivamus interdum consequat finibus.',
+    problem3: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis ornare blandit. Suspendisse enim leo, interdum sed mattis sed, consequat viverra nibh. Donec sollicitudin ullamcorper consequat. Vivamus interdum consequat finibus.',
+    problem4: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis ornare blandit. Suspendisse enim leo, interdum sed mattis sed, consequat viverra nibh. Donec sollicitudin ullamcorper consequat. Vivamus interdum consequat finibus.',
+    problem5: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis ornare blandit. Suspendisse enim leo, interdum sed mattis sed, consequat viverra nibh. Donec sollicitudin ullamcorper consequat. Vivamus interdum consequat finibus.',
     technologies: ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'MySQL'],
-    githubRepoLink: 'https://github.com/AlfonsoDelaLuna/Guidance_Management_System',
-    features: ['Student Information Management', 'Consultation Form Tracking', 'Reporting'],
+    githubRepoLink: 'https://github.com/AlfonsoDelaLuna/Guidance_System',
+    features: ['Student Record Management', 'Consultation Tracking', 'Report Generation'],
     challenges: [],
     outcomes: [],
   },

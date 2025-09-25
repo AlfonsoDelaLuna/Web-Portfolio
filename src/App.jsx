@@ -10,6 +10,7 @@ import EducationSection from './components/EducationSection';
 import ProjectInfoPage from './projects/STIER_COPLAN/ProjectInfoPage'; // Default project page
 import ClinicManagementInfoPage from './projects/Clinic_Management/ClinicManagementInfoPage'; // New clinic project page
 import DrugstoreManagementInfoPage from './projects/Drugstore_Management/Drugstore_ManagementInfoPage'; // New drugstore project page
+import GuidanceManagementInfoPage from './projects/Guidance_Management/Guidance_ManagementInfoPage'; // New guidance project page
 import projectsData from './data/project'; // Import your project data
 
 // This component will render your main portfolio sections
@@ -57,6 +58,10 @@ const ProjectDetailWrapper = () => {
 
   if (projectId === 'drugstore-management-system') {
     return <DrugstoreManagementInfoPage project={project} />;
+  }
+
+  if (projectId === 'guidance-management-system') {
+    return <GuidanceManagementInfoPage project={project} />;
   }
 
   // Render the default project page for all other projects
