@@ -102,10 +102,19 @@ const ClinicManagementInfoPage = ({ project }) => {
         <div className="clinic-slider-wrapper">
           <Slider {...sliderSettings}>
             <div className="slide-item">
-              <img src="/images/Clinic_Background_bg.png" alt="COPLAN" />
+              <img src="/images/Clinic_Login.png" alt="Login" />
             </div>
             <div className="slide-item">
-              <img src="/images/Clinic_Background_New.png" alt="Admin" />
+              <img src="/images/Clinic_History.png" alt="History" />
+            </div>
+            <div className="slide-item">
+              <img src="/images/Clinic_Loginsheet.png" alt="Loginsheet" />
+            </div>
+            <div className="slide-item">
+              <img src="/images/Clinic_Inventory.png" alt="Inventory" />
+            </div>
+            <div className="slide-item">
+              <img src="/images/Clinic_Guest_Loginsheet.png" alt="Guest Loginsheet" />
             </div>
           </Slider>
         </div>
