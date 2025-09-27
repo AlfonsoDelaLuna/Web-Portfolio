@@ -52,7 +52,7 @@ const projectsData = [
   { // Guidance Management System
     id: 'guidance-management-system',
     title: 'Guidance Management System',
-    heroImage: '/images/Guidance_bg.png',
+    heroImage: '/images/Guidance_Image/Guidance_bg.png',
     minioverview: 'This project is a guidance system for educational institutions, such as schools and colleges. It provides a range of features to manage student records, track consultations, and facilitate various guidance-related activities.',
     overview: 'This Guidance Management System is designed to streamline the management of guidance activities and student records within educational institutions. It provides a centralized platform for tracking student information, managing consultations, and generating comprehensive reports for informed decision-making in guidance management. The system aims to improve efficiency, reduce errors, and optimize guidance activities to meet the needs of students and educational staff.',
     problem: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis ornare blandit.',
