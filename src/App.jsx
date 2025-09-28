@@ -11,6 +11,7 @@ import ProjectInfoPage from './projects/STIER_COPLAN/ProjectInfoPage'; // Defaul
 import ClinicManagementInfoPage from './projects/Clinic_Management/ClinicManagementInfoPage'; // New clinic project page
 import DrugstoreManagementInfoPage from './projects/Drugstore_Management/Drugstore_ManagementInfoPage'; // New drugstore project page
 import GuidanceManagementInfoPage from './projects/Guidance_Management/Guidance_ManagementInfoPage'; // New guidance project page
+import LibraryManagementInfoPage from './projects/Library_Management/Library_ManagementInfoPage'; // New library project page
 import projectsData from './data/project'; // Import your project data
 
 // This component will render your main portfolio sections
@@ -62,6 +63,10 @@ const ProjectDetailWrapper = () => {
 
   if (projectId === 'guidance-management-system') {
     return <GuidanceManagementInfoPage project={project} />;
+  }
+
+  if (projectId === 'library-management-system') {
+    return <LibraryManagementInfoPage project={project} />;
   }
 
   // Render the default project page for all other projects

@@ -42,7 +42,7 @@ const AnimatedSection = ({ children }) => {
   );
 };
 
-const ClinicManagementInfoPage = ({ project }) => {
+const DrugstoreManagementInfoPage = ({ project }) => {
   if (!project) {
     return <div>Project not found</div>;
   }
@@ -116,4 +116,4 @@ const ClinicManagementInfoPage = ({ project }) => {
   );
 };
 
-export default ClinicManagementInfoPage;
+export default DrugstoreManagementInfoPage;

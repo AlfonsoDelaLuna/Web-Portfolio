@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './Guidance_ManagementInfoPage.css';
+import './Library_ManagementInfoPage.css';
 
 // Custom hook for observing element intersection
 const useIntersectionObserver = (options) => {
@@ -42,7 +42,7 @@ const AnimatedSection = ({ children }) => {
   );
 };
 
-const GuidanceManagementInfoPage = ({ project }) => {
+const LibraryManagementInfoPage = ({ project }) => {
   if (!project) {
     return <div>Project not found</div>;
   }
@@ -100,19 +100,7 @@ const GuidanceManagementInfoPage = ({ project }) => {
         <div className="clinic-slider-wrapper">
           <Slider {...sliderSettings}>
             <div className="slide-item">
-              <img src="/images/Guidance_Image/Guidance_Login.png" alt="Login" />
-            </div>
-            <div className="slide-item">
-              <img src="/images/Guidance_Image/Guidance_MainSystem.png" alt="Main System" />
-            </div>
-            <div className="slide-item">
-              <img src="/images/Guidance_Image/Guidance_SHS.png" alt="SHS" />
-            </div>
-            <div className="slide-item">
-              <img src="/images/Guidance_Image/Guidance_College.png" alt="College" />
-            </div>
-            <div className="slide-item">
-              <img src="/images/Guidance_Image/Guidance_AddStudent.png" alt="Add Student" />
+              <img src="/images/Library_bg.png" alt="Login" />
             </div>
           </Slider>
         </div>
@@ -125,4 +113,4 @@ const GuidanceManagementInfoPage = ({ project }) => {
   );
 };
 
-export default GuidanceManagementInfoPage;
+export default LibraryManagementInfoPage;
