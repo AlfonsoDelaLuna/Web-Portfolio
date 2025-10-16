@@ -21,6 +21,7 @@ A personal portfolio website built with React and Vite to showcase my projects, 
 
 ### Guidance Management System
 - A web-based inventory management system that adds students, manages student records, and tracks consultation forms used throughout their school year.
+- *Tech Stach*: PHP, MySQL, HTML, CSS, JavaScript
 - [Guidance Management System repo](https://github.com/AlfonsoDelaLuna/Guidance_System)
   
 ### Drugstore Management System
