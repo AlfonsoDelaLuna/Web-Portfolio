@@ -7,7 +7,7 @@
   height: 100%;
   background-color: #0a192f; /* Dark blue background */
   color: #cdd6f4; /* Light text color */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   z-index: 1000; /* Ensure it's on top */
   overflow-y: auto; /* Allow scrolling */
 }
@@ -32,14 +32,40 @@
   color: #64ffda;
 }
 
-/* New Layout Styles */
+.header-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.back-button {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
 .clinic-header {
   padding: 60px 40px;
   text-align: center;
-  background-color: #050A30; /* Darker blue */
-  p{
-    text-align: justify;
-  }
+  background-color: #050a30; /* Darker blue */
+}
+
+.clinic-header p {
+  text-align: justify;
 }
 
 .tech-tags {
@@ -97,7 +123,7 @@
 .clinic-footer {
   padding: 40px;
   text-align: center;
-  background-color: #050A30; /* Darker blue */
+  background-color: #050a30; /* Darker blue */
 }
 
 .clinic-footer a {

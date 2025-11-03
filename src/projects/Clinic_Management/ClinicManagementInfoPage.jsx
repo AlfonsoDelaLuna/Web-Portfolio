@@ -1,9 +1,9 @@
 // src/projects/Clinic_Management_v2/ClinicManagementInfoPage.jsx
-import React, { useEffect, useRef, useState } from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import './ClinicManagementInfoPage.css';
+import React, { useEffect, useRef, useState } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "./ClinicManagementInfoPage.css";
 
 // Custom hook for observing element intersection
 const useIntersectionObserver = (options) => {
@@ -36,7 +36,10 @@ const useIntersectionObserver = (options) => {
 const AnimatedSection = ({ children }) => {
   const [ref, isVisible] = useIntersectionObserver({ threshold: 0.1 });
   return (
-    <div ref={ref} className={`reveal-on-scroll ${isVisible ? 'is-visible' : ''}`}>
+    <div
+      ref={ref}
+      className={`reveal-on-scroll ${isVisible ? "is-visible" : ""}`}
+    >
       {children}
     </div>
   );
@@ -56,27 +59,50 @@ const ClinicManagementInfoPage = ({ project }) => {
     autoplay: true,
     autoplaySpeed: 3000,
     fade: true,
-    cssEase: 'linear'
+    cssEase: "linear",
   };
 
   return (
     <div className="clinic-info-container">
       <header className="clinic-header">
         <AnimatedSection>
-          <h1>{project.title}</h1>
+          <div className="header-container">
+            <h1>{project.title}</h1>
+            <a href="/" className="back-button">
+              Back to Projects
+            </a>
+          </div>
           <p>{project.overview}</p>
           <div className="tech-tags">
             {project.technologies.map((tech, index) => (
-              <span key={index} className="tech-tag">{tech}</span>
+              <span key={index} className="tech-tag">
+                {tech}
+              </span>
             ))}
           </div>
           <div className="project-links">
-            <a href={project.githubRepoLink} target="_blank" rel="noopener noreferrer">
-              <img src="/images/Github.png" alt="GitHub" className="link-icon" />
+            <a
+              href={project.githubRepoLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/images/Github.png"
+                alt="GitHub"
+                className="link-icon"
+              />
               <span>GitHub</span>
             </a>
-            <a href={project.liveDemoLink} target="_blank" rel="noopener noreferrer">
-              <img src="/images/info.png" alt="Live Demo" className="link-icon" />
+            <a
+              href={project.liveDemoLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/images/info.png"
+                alt="Live Demo"
+                className="link-icon"
+              />
               <span>Live Demo</span>
             </a>
           </div>
@@ -94,8 +120,6 @@ const ClinicManagementInfoPage = ({ project }) => {
               <li>{project.problem3}</li>
               <li>{project.problem4}</li>
               <li>{project.problem5}</li>
-              <li>{project.problem6}</li>
-              <li>{project.problem7}</li>
             </ol>
           </section>
         </AnimatedSection>
@@ -105,24 +129,23 @@ const ClinicManagementInfoPage = ({ project }) => {
               <img src="/images/Clinic_Login.png" alt="Login" />
             </div>
             <div className="slide-item">
-              <img src="/images/Clinic_History.png" alt="History" />
+              <img src="/images/Clinic_Loginsheet.png" alt="Loginsheet" />
             </div>
             <div className="slide-item">
-              <img src="/images/Clinic_Loginsheet.png" alt="Loginsheet" />
+              <img src="/images/Clinic_History.png" alt="History" />
             </div>
             <div className="slide-item">
               <img src="/images/Clinic_Inventory.png" alt="Inventory" />
             </div>
             <div className="slide-item">
-              <img src="/images/Clinic_Guest_Loginsheet.png" alt="Guest Loginsheet" />
+              <img
+                src="/images/Clinic_Guest_Loginsheet.png"
+                alt="GLoginsheet"
+              />
             </div>
           </Slider>
         </div>
       </main>
-
-      <footer className="clinic-footer">
-        <a href="/">Back to Projects</a>
-      </footer>
     </div>
   );
 };

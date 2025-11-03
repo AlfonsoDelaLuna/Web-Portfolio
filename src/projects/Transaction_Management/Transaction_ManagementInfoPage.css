@@ -32,14 +32,40 @@
   color: #64ffda;
 }
 
-/* New Layout Styles */
+.header-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.back-button {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
 .clinic-header {
   padding: 60px 40px;
   text-align: center;
   background-color: #050a30; /* Darker blue */
-  p {
-    text-align: justify;
-  }
+}
+
+.clinic-header p {
+  text-align: justify;
 }
 
 .tech-tags {

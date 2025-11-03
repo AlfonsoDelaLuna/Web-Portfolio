@@ -66,7 +66,12 @@ const TransactionManagementInfoPage = ({ project }) => {
     <div className="clinic-info-container">
       <header className="clinic-header">
         <AnimatedSection>
-          <h1>{project.title}</h1>
+          <div className="header-container">
+            <h1>{project.title}</h1>
+            <a href="/" className="back-button">
+              Back to Projects
+            </a>
+          </div>
           <p>{project.overview}</p>
           <div className="tech-tags">
             {project.technologies.map((tech, index) => (
@@ -126,10 +131,6 @@ const TransactionManagementInfoPage = ({ project }) => {
           </Slider>
         </div>
       </main>
-
-      <footer className="clinic-footer">
-        <a href="/">Back to Projects</a>
-      </footer>
     </div>
   );
 };
