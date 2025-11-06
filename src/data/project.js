@@ -63,9 +63,9 @@ const projectsData = [
     title: "Drugstore Management System",
     heroImage: "/images/Drugstore_bg.png",
     minioverview:
-      "A web-based management system is designed to manage and track inventory for a drugstore.",
+      "A web-based management system is designed to manage and track inventory for a drugstore. It is helpful for the drugstore to manage their inventory and track the stock levels of their products.",
     overview:
-      "This Drugstore Inventory System is designed to streamline the management of pharmaceutical products and related items within a drugstore setting. It provides a centralized platform for monitoring stock levels, tracking product information (such as name, description, supplier, and expiration date), and generating comprehensive reports for informed decision-making in inventory management. The system aims to improve efficiency, reduce errors, and optimize stock levels to meet customer demand while minimizing waste.",
+      "It is an inventory management solution designed for drugstores, providing a centralized platform to manage and track pharmaceutical products and related items. It encompasses functionalities for monitoring stock levels, recording comprehensive product details (such as name, description, number of items, and expiration date), and generating various management reports.",
     problem:
       "The major problems observed in the current inventory process are:",
     problem1:
@@ -90,7 +90,7 @@ const projectsData = [
     title: "Guidance Management System",
     heroImage: "/images/Guidance_Image/Guidance_bg.png",
     minioverview:
-      "This project is a guidance system for educational institutions, such as schools and colleges. It provides a range of features to manage student records, track consultations, and facilitate various guidance-related activities.",
+      "It is an all-in-one system for schools and colleges to better manage student information and guidance services. It organizes student records, tracks consultations, and supports various guidance activities making administrative tasks simpler and improving student support.",
     overview:
       "This Guidance Management System is designed to streamline the management of guidance activities and student records within educational institutions. It provides a centralized platform for tracking student information, managing consultations, and generating comprehensive reports for informed decision-making in guidance management. The system aims to improve efficiency, reduce errors, and optimize guidance activities to meet the needs of students and educational staff.",
     problem:
