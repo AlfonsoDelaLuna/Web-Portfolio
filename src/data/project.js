@@ -1,26 +1,6 @@
 // src/data/project.js
 const projectsData = [
   {
-    //STIER COPLAN
-    id: "stier-coplan",
-    title: "STIER COPLAN: Event Reservation System",
-    heroImage: "/images/COPLAN_bg.png", // Make sure you have this image
-    minioverview:
-      "STIER COPLAN is a web-based event reservation system developed using Java and Firebase...",
-    overview:
-      "STIER COPLAN is a web-based event reservation system developed using Java and Firebase...",
-    technologies: [
-      "HTML5",
-      "CSS3",
-      "JavaScript",
-      "Java",
-      "Firebase (Firestore)",
-      "Android",
-    ],
-    githubRepoLink: "https://github.com/AlfonsoDelaLuna/Guidance_System",
-    // ... other details like features, challenges, etc.
-  },
-  {
     //Clinic Management System
     id: "clinic-management-system", // new slug-like id
     title: "Clinic Management System",

@@ -12,7 +12,6 @@ import HeaderSection from "./components/HeaderSection";
 import ProjectsSection from "./components/ProjectSection";
 import ExperienceSection from "./components/ExperienceSection";
 import EducationSection from "./components/EducationSection";
-import ProjectInfoPage from "./projects/STIER_COPLAN/ProjectInfoPage"; // Default project page
 import ClinicManagementInfoPage from "./projects/Clinic_Management/ClinicManagementInfoPage"; // New clinic project page
 import DrugstoreManagementInfoPage from "./projects/Drugstore_Management/Drugstore_ManagementInfoPage"; // New drugstore project page
 import GuidanceManagementInfoPage from "./projects/Guidance_Management/Guidance_ManagementInfoPage"; // New guidance project page
@@ -78,9 +77,6 @@ const ProjectDetailWrapper = () => {
   if (projectId === "transaction-management-system") {
     return <TransactionManagementInfoPage project={project} />;
   }
-
-  // Render the default project page for all other projects
-  return <ProjectInfoPage project={project} />;
 };
 
 export default App;
