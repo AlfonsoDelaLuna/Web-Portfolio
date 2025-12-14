@@ -1,5 +1,5 @@
 # Web Portfolio
-A personal portfolio website built with React and Vite to showcase my projects, skills, and experience.
+A personal web portfolio built with React and Vite to showcase my projects, skills, and experience.
 
 # Tech Stack
 - React
