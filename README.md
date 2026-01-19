@@ -27,7 +27,6 @@ A personal web portfolio built with React and Vite to showcase my projects, skil
 - A web-based inventory management system that simplifies the input of medicine from paper-based to digital. It helps the nurse document the available medicine and expiration date, and allows the admin to download/print records from it.
 - *Tech Stach*: PHP, MySQL, HTML, CSS, JavaScript
 - [Drugstore Inventory System repo](https://github.com/AlfonsoDelaLuna/Drugstore_Inventory)
-
 ### Transaction Management System
 - A web-based transaction management system that helps staff take orders from the customer and the admin to check the profit from daily to monthly to yearly revenue and the most profitable product.
 - *Tech Stach*: PHP, MySQL, HTML, CSS, JavaScript
